@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: url('https://cdn.wallpapersafari.com/36/50/xJkCqA.jpg'); 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.home-link {
+  color: #9a8c98;
+  font-size: 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+
+}
+
+.home-link:hover {
+  color: #b5179e;
+}
+
+.heading {
+    font-size: 30px;
+    text-align: left;
+    padding-top: 20px;
+    color: #cc444b;
+}
+
+.topic {
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  text-align: center;
+  color: #da5552;
+}
+
+#centered-video {
+  margin-bottom: 20px; 
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 100%; 
+  max-width: 600px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.accordion {
+  width: 80%;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 10px;
+}
+
+
+.accordion-header {
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.accordion-header:hover {
+  color: #007bff;
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+
+.accordion-title {
+  font-weight: bold;
+  color: #df7373;
+}
+
+
+.accordion-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+
+.accordion-header.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  display: none;
+  padding: 1rem 0;
+  background-color: transparent;
+}
+
+
+.lesson, .quiz {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #2e0e02;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lesson span, .quiz span {
+  font-weight: bold;
+  color: #a20021;
+  margin-right: 10px;
+}
+
+
+a {
+  text-decoration: none;
+  color: #ebcbf4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 767px) {
+  .accordion {
+      width: 90%;
+  }
+  #centered-video {
+    width: 90%;
+}
+
+}
+
+.button {
+  position: fixed;
+  bottom: 10px; 
+  left: 10px;
+  padding: 10px 20px;
+  background-color: #a4133c;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  /* transition: 0.3s; */
+}
+
+.button:hover {
+  background-color: #ff4d6d;
+}
